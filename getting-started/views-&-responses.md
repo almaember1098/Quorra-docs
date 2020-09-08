@@ -51,7 +51,7 @@ res.redirect('../login');
 Views typically contain the HTML of your application and provide a convenient way of separating your controller and
 domain logic from your presentation logic. Views are stored in the `resources/views` directory.
 
-Quorra uses Jade as its default template engine. Quorra's template implementation relies on Node's
+Quorra uses Pug as its default template engine. Quorra's template implementation relies on Node's
 [consolidate](https://www.npmjs.org/package/consolidate) library. Hence Quorra supports all the template engines that
  consolidate library supports. You can configure your template engine settings in `app/config/view.js` configuration
  file.
@@ -59,7 +59,7 @@ Quorra uses Jade as its default template engine. Quorra's template implementatio
 A simple view could look something like this:
 
 ```
-<!-- View stored in applicationRoot/resources/views/index.jade -->
+<!-- View stored in applicationRoot/resources/views/index.pug -->
 
 extends layout
 
